@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/primaryColor"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar_1"
+        android:layout_alignParentTop="true"
+        android:id="@+id/gambar_1"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar_1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gambar_2"
+        android:src="@drawable/gambar_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wira Sukma Saputra"
+        android:layout_below="@id/gambar_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_1"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_1"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Enter Your Name"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="20dp"
+            android:background="@drawable/button_shape"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

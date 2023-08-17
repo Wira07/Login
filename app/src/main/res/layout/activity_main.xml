@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/gambar_1"
+        android:id="@+id/gambar_1"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gambar_1"
+        android:id="@+id/gambar_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gambar_2"
+        android:layout_marginTop="17dp"
+        android:id="@+id/text_1"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_2"
+        android:layout_below="@id/text_1"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Halo selamat datang di aplikasi wira semoga betah nya"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_2"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Login"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"/>
+
+
+</RelativeLayout>
